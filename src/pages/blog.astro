@@ -1,6 +1,6 @@
 ---
-import Navigation from '../components/Navigation.astro';
-
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 const pageTitle = "我的 Astro 学习博客";
@@ -14,8 +14,11 @@ const pageTitle = "我的 Astro 学习博客";
     <meta name="generator" content = {Astro.generator} >
     <title>Astro</title>
   </head>
+
+
   <body>
-    <Navigation />
+
+    <Header />
     <h1>{pageTitle}</h1>
     <p>在这里，我将分享我的 Astro 学习之旅。</p>
     <ul>
@@ -23,5 +26,10 @@ const pageTitle = "我的 Astro 学习博客";
       <li><a href="/posts/post-2/">文章 2</a></li>
       <li><a href="/posts/post-3/">文章 3</a></li>
     </ul>
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
+    
   </body>
 </html>

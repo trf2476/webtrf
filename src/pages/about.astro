@@ -1,6 +1,8 @@
 ---
-import Navigation from '../components/Navigation.astro';
 
+import Header from '../components/Header.astro';
+
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 const pageTitle = "关于我";
@@ -43,8 +45,10 @@ const textCase = "uppercase";
 
 
   </head>
+
   <body>
-    <Navigation />
+
+    <Header />
     <h1>{pageTitle}</h1>
     <h2>……和我的新 Astro 网站！</h2>
 
@@ -70,5 +74,10 @@ const textCase = "uppercase";
     {finished && <p>我完成了这节教程！</p>}
 
     {goal === 3 ? <p>我的目标是在三天内完成。</p> : <p>我的目标不是 3 天。</p>}
+    
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
