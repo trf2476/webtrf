@@ -7,6 +7,19 @@ import Social from './Social.astro';
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #ccc;
+    width: 100%;
+  }
+  
+  .social-container {
+    display: flex;
+    gap: 1rem;
   }
 </style>
 
@@ -14,7 +27,12 @@ import Social from './Social.astro';
 <footer>
    
   <!--<p>在 <a href={`https://www.${platform}.com/${username}`}>{platform}</a> 上，了解有关我的项目的更多信息！</p><!-->
-  <Social platform="github" username="trf2476" />
+  <div class="divider"></div>
+  <div class="social-container">
+    <Social platform="首页" username="trf2476" url="https://trf2476.github.io" label="我的网站" backgroundColor="#007acc" />
+    <Social platform="github" username="trf2476" />
     <Social platform="gitee" username="trf2476" />
     <Social platform="gitcode" username="trf2476" />
+    <Social platform="这个网站" username="trf2476" url="http://github.com/trf2476/webtrf" label='这个网站' />
+  </div>
 </footer>

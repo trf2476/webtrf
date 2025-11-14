@@ -16,7 +16,7 @@ const {
   label,
   backgroundColor = '#4c1d95',
   textColor = 'white',
-  newTab = true
+  newTab = false
 } = Astro.props;
 
 // 如果没有提供自定义 URL，则根据平台生成默认 URL
